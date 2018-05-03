@@ -1,0 +1,46 @@
+<!--
+    HTML5 code of Pacman Game.
+    Made by Alí Nabahin for CSAAI.
+-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8"/>
+		<script src="pacman.js"></script>
+		<link rel="stylesheet" href="pacman.css"/>
+    <title>PACMAN GAME by Alí Nabahin</title>
+
+  </head>
+
+	<body onload="instructions()">
+		<img id="title" src="titulo.png">
+		<img id="pacman-yellow" src="yellow.png" draggable="true" ondragstart="drag(event)">
+		<img id="pacman-blue" src="blue.png" draggable="true" ondragstart="drag(event)">
+		<img id="pacman-green" src="green.png" draggable="true" ondragstart="drag(event)">
+		<img id="pacman-red" src="red.png" draggable="true" ondragstart="drag(event)">
+		<img id="ghost1" src="ghost.png" style="display: none;">
+		<img id="ghost2" src="ghostpink.png" style="display: none;">
+		<img id="pacman-deco" src="Pacman-gif.gif">
+		<img id="live1" src="life.png">
+		<img id="live2" src="life.png">
+		<img id="live3" src="life.png">
+		<img id="signature" src="marca.gif">
+		<img id="texture" src="texture.jpg" style="display: none;">
+		<button id="play" type="button" onclick="start_game()"> pLAy </button>
+		<button id="stop" type="button" onclick="pause_game()"> StoP </button>
+		<button id="highscore" type="button" onclick="highscore()"> HiGh ScOrE </button>
+		<p id="selection"> cHOOse yOUR <br><br> <span id="differentcolor">fAvORItE</span> <span id="yellow">c</span>OlOR</p>
+		<p id="lives"> lIVes </p>
+		<p id="myscore"> sCORe <span id="score">0000</span></p>
+		<center>
+			<canvas id="gameboard" width="600" height="600" ondrop="drop(event)" ondragover="allowDrop(event)">
+				Please use a browser that supports "canvas.
+			</canvas>
+		</center>
+		<p id="copyright"> made by Alí Nabahin © </p>
+	</body>
+
+</html>

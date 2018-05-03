@@ -1,0 +1,224 @@
+/*
+    CSS3 Stylesheet for the Pacman Game.
+*/
+
+@font-face{
+  font-family: caviar;
+  src: url("CaviarDreams.ttf");
+}
+
+@font-face{
+  font-family: leixo;
+  src: url("leixo.ttf");
+}
+
+@font-face{
+  font-family: pac-font;
+  src: url("PAC-FONT.TTF");
+}
+
+body{
+	background-color: WHITE;
+}
+
+img#title{
+	position: fixed;
+	left: 1px;
+	top: 50px;
+	height: 85%;
+}
+
+canvas{
+	/*background: url(background-canvas.jpg);*/
+	background: black;
+	font-family: pac-font;
+	border: 5px groove #df1540;
+	position: relative;
+	top: 40px;
+	cursor: none;
+}
+
+p#copyright{
+	position: fixed;
+	bottom: 2px;
+	right: 10px;
+	font-family: caviar;
+	font-size: 15px;
+	text-transform: capitalize;
+	text-decoration: overline underline;
+	text-shadow: 2px 2px #c1c4c0;
+	cursor: default;
+	overflow: auto;
+}
+
+p#selection{
+	position: fixed;
+	right: 40px;
+	top: 20px;
+	font-family: pac-font;
+	color: #000000;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px #000000;
+	cursor: default;
+}
+
+span#differentcolor{
+	color: #df1540;
+}
+
+span#yellow{
+	color: #fcf944;
+}
+
+span#black{
+	color: black;
+}
+
+img#pacman-blue{
+	position: fixed;
+	top: 120px;
+	right: 250px;
+	cursor: move;
+}
+
+img#pacman-green{
+	position: fixed;
+	top: 120px;
+	right: 50px;
+	cursor: move;
+	padding-bottom: 20px;
+}
+
+img#pacman-red{
+	position: fixed;
+	top: 120px;
+	right: 120px;
+	cursor: move;
+}
+
+img#pacman-yellow{
+	position: fixed;
+	top: 120px;
+	right: 190px;
+	cursor: move;
+}
+
+p#lives{
+	position: fixed;
+	top: 350px;
+	right: 20px;
+	font-family: pac-font;
+	font-size: 33px;
+	color: #df1540;
+	text-shadow: 2px 3px 4px #000000;
+	cursor: default;
+}
+
+p#myscore{
+	position: fixed;
+	top: 290px;
+	right: 180px;
+	font-family: pac-font;
+	font-size: 30px;
+	color: black;
+	text-shadow: 2px 3px 4px #000000;
+	cursor: default;
+}
+
+img#pacman-deco{
+	position: fixed;
+	top: 400px;
+	right: 200px;
+	height: 15%;
+}
+
+span#score{
+	position: fixed;
+	font-family: leixo;
+	font-size: 50px;
+	top: 305px;
+	right: 30px;
+}
+
+img#live1{
+	position: fixed;
+	top: 430px;
+	right: 120px;
+}
+
+img#live2{
+	position: fixed;
+	top: 430px;
+	right: 73px;
+}
+
+img#live3{
+	position: fixed;
+	top: 430px;
+	right: 25px;
+}
+
+img#signature{
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	height: 20%;
+	overflow: auto;
+}
+
+button#play{
+	font-family: pac-font;
+	border-width: 4px;
+	padding: 8px 5px;
+	text-align: center;
+	font-size: 25px;
+	color: #df1540;
+	cursor: pointer;
+	position: fixed;
+	top: 170px;
+	right: 200px;
+	background-color: white;
+}
+
+button#stop{
+	font-family: pac-font;
+	border-width: 4px;
+	padding: 5px 5px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+	position: fixed;
+	top: 170px;
+	right: 25px;
+	background-color: #df1540;
+}
+
+button#highscore{
+	font-family: pac-font;
+	border-width: 4px;
+	padding: 8px 5px;
+	text-align: center;
+	font-size: 25px;
+	color: black;
+	cursor: pointer;
+	position: fixed;
+	top: 240px;
+	right: 50px;
+	background-color: white;
+}
+
+button#play:hover {
+  background-color: black;
+  color: #fcf944;
+}
+
+button#highscore:hover {
+  background-color: #df1540;
+  color: black;
+}
+
+button#stop:hover {
+ 	background-color: #fcf944;
+  color: black;
+}
